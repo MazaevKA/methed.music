@@ -1,0 +1,44 @@
+.catalog__button {
+  color: #FFFFFF;
+  grid-column: 1 / -1;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  width: 12.6rem;
+  border: .2rem solid transparent;
+  border-radius: .5rem;
+  transition: border .2s ease-in;
+}
+
+.catalog__button:hover,
+.catalog__button:active,
+.catalog__button:focus {
+  color: rgba(255, 255, 255, 0.7);
+  border: .2rem solid rgba(255, 255, 255, 0.7);
+  border-radius: .5rem;
+}
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  .catalog__button {
+    gap: 0.8rem;
+    font-size: 3.2rem;
+    width: 25.2rem;
+    border: .4rem solid transparent;
+    border-radius: 1rem;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .catalog__button {
+    gap: 0.8rem;
+    font-weight: 600;
+    font-size: 3.2rem;
+    width: 25.2rem;
+    border: .4rem solid transparent;
+    border-radius: 1rem;
+    transition: border .2s ease-in;
+  }
+}

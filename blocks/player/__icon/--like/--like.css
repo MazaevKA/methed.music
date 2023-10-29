@@ -1,0 +1,33 @@
+.player__icon--like {
+  border: .2rem solid transparent;
+}
+
+.player__icon--like:hover,
+.player__icon--like:active,
+.player__icon--like:focus {
+  color: #343434;
+  border: .2rem solid #343434;
+  border-radius: .5rem;
+}
+
+.player__icon--like-active {
+  filter: drop-shadow(0 0 .2rem tomato);
+}
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  .player__icon--like:hover,
+  .player__icon--like:active,
+  .player__icon--like:focus {
+    border: .4rem solid #343434;
+    border-radius: 1rem;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .player__icon--like:hover,
+  .player__icon--like:active,
+  .player__icon--like:focus {
+    border: .4rem solid #343434;
+    border-radius: 1rem;
+  }
+}

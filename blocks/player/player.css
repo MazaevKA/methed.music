@@ -1,0 +1,66 @@
+@import "./__controller/__controller.css";
+@import "./__icon/__icon.css";
+@import "./__icon/--like/--like.css";
+@import "./__icon/--mute-on/--mute-on.css";
+@import "./__icon/--mute-off/--mute-off.css";
+@import "./__icon/--next/--next.css";
+@import "./__icon/--pause/--pause.css";
+@import "./__icon/--play/--play.css";
+@import "./__icon/--prev/--prev.css";
+@import "./__icon/--stop/--stop.css";
+@import "./__progress/__progress.css";
+@import "./__progress-input/__progress-input.css";
+@import "./__progress-wrap/__progress-wrap.css";
+@import "./__time/__time.css";
+@import "./__time-passed/__time-passed.css";
+@import "./__time-total/__time-total.css";
+@import "./__volume/__volume.css";
+@import "./__volume-input/__volume-input.css";
+@import "./__volume-wrap/__volume-wrap.css";
+@import "./__wrap/__wrap.css";
+
+.player {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(.6rem);
+  border-radius: 2rem;
+  width: 122.8rem;
+  margin: 0 auto;
+  transition: bottom .5s ease-in;
+  padding: 2.4rem;
+}
+
+.player--active {
+  bottom: 2.6rem;
+}
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  .player {
+    width: 100%;
+    height: 29.4rem;
+    padding: 3.2rem 3rem;
+    border-radius: 6rem 6rem 0 0;
+  }
+
+  .player--active {
+    bottom: 0;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .player {
+    width: 140rem;
+    height: 27.4rem;
+    padding: 4.4rem 12.0rem;
+    border-radius: 6rem;
+  }
+}
+
+@media (min-width: 64em) and (max-width: 79.9375em) { /* Ширина экрана минимум 1024px максимум 1279px */
+  .player {
+    width: 102.4rem;
+  }
+}
